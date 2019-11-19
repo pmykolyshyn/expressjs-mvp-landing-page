@@ -1,0 +1,44 @@
+{
+    "name": "myapp",
+    "id": "myapp",
+    "url": "",
+    "packaging_format": 1,
+    "description": {
+        "en": "myapp App for Yunohost",
+        "fr": "myapp App for Yunohost"
+    },
+    "version": "1.0",
+    "license": "AGPL-3.0",
+    "maintainer": {
+        "name": "",
+        "email": ""
+    },
+    "requirements": {
+        "yunohost": ">= 2.7.2"
+    },
+    "services": [
+        "nginx"
+     ],
+    "multi_instance": true,
+    "arguments": {
+        "install" : [
+            {
+                "name": "domain",
+                "type": "domain",
+                "ask": {
+                    "en": "Choose a domain for myapp",
+                    "fr": "Choisissez un domaine pour myapp"
+                },
+                "example": "app.domain.org"
+            },{
+                "name": "is_public",
+                "type": "boolean",
+                "ask": {
+                    "en": "Can a non-member access the app ?",
+                    "fr": "Un non-membre peut-il accéder à l'application ?"
+                },
+                "default": false
+            }
+        ]
+    }
+}

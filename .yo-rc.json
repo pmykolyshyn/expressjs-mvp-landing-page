@@ -1,0 +1,18 @@
+{
+  "generator-dockerapp-yunohost": {
+    "beautifulName": "myapp",
+    "defaultPathOption": "",
+    "forceSecureAccess": true,
+    "secureAccessOption": true,
+    "adminUserOption": false,
+    "enDescription": "myapp App for Yunohost",
+    "frDescription": "myapp App for Yunohost",
+    "urlApp": "",
+    "urlDockerHub": "",
+    "authorName": "",
+    "authorEmail": "",
+    "idName": "myapp",
+    "reverseProxyProtocol": "http",
+    "scriptsLoadSave": false
+  }
+}
